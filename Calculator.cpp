@@ -34,7 +34,14 @@ int main()
         }
 
 
-    
+        while(Operator == '/' && num2 == 0){
+            cout << "Can't be devided by zero change the number : ";
+            while(!(cin >> num2)){
+                cin.clear();
+                cin.ignore(1000,'\n');
+                cout << "Please enter a valid number : ";
+            }
+        }
 
         switch(Operator){
             case '+':
@@ -50,10 +57,6 @@ int main()
                 result = num1 - num2;
                 break;
             case '/':
-                if(Operator == '/' && num2 == 0){
-                    cout << "Can't be divided by zero";
-                    return 0;
-                }
                 result = num1 / num2;
                 break;
         }
