@@ -35,7 +35,7 @@ int main()
 
 
         while(Operator == '/' && num2 == 0){
-            cout << "Can't be devided by zero change the number : ";
+            cout << "Can't be devided by zero change the second number : ";
             while(!(cin >> num2)){
                 cin.clear();
                 cin.ignore(1000,'\n');
@@ -53,6 +53,9 @@ int main()
             case 'X':
                 result = num1 * num2;
                 break;
+            case '*':
+                result = num1 * num2;
+                break;
             case '-':
                 result = num1 - num2;
                 break;
@@ -61,7 +64,7 @@ int main()
                 break;
         }
         cout << "The result of " << num1 << " " << Operator << " " << num2 <<  " is " << result << endl;
-        cout << "Do you want to calculate again (y/n)";
+        cout << "Do you want to calculate again (y/n) : ";
         cin >> Continue;
     }
 
