@@ -8,7 +8,7 @@ int main()
     int columns;
     string input1;
     string input2;
-    
+    string symbol;
     while(true){
          cout << "Enter a valid integer value for rows: ";
          getline(cin,input1);
@@ -30,13 +30,19 @@ int main()
          }
          cout << "Invalid input. Try again.\n";
     }
+
+    cout << "Enter a symbol to use for the rectangle: ";
+    cin >> symbol;
+
+    while(symbol.empty()){
+        cout << "Please enter a valid symbol : ";
+        cin >> symbol;
+    }
     
 
     for(int i = 1; i <= rows;i++){
         for(int j = 1; j <= columns; j++){
-            string sample = "";
-            sample += " * ";
-            cout << sample;
+            cout << symbol << " ";
         }
         cout << "\n";
     }
