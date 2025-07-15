@@ -8,7 +8,7 @@ int main()
     int columns;
     string input1;
     string input2;
-    string symbol;
+    char symbol;
     while(true){
          cout << "Enter a valid integer value for rows: ";
          getline(cin,input1);
@@ -33,8 +33,7 @@ int main()
 
     cout << "Enter a symbol to use for the rectangle: ";
     cin >> symbol;
-
-    while(symbol.empty()){
+    while(!(symbol)){
         cout << "Please enter a valid symbol : ";
         cin >> symbol;
     }
