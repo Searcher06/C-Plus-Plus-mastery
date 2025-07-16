@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "iostream": "cpp",
-    "functional": "cpp"
+    "functional": "cpp",
+    "charconv": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
