@@ -7,7 +7,7 @@ int main()
     // pseudo-random = Not truly random (but close)
     srand(time(NULL));
 
-    int num = (rand() % 20) + 1;
+    int num = (rand() % 3) + 1;
 
     cout << num;
 
