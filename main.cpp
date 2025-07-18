@@ -9,10 +9,8 @@ int main()
     char grade = 'A';
     // string
     string name = "Ahmad";
-    // boolean 
+    // boolean
     bool student = false;
-    
-    
-    
+
     return 0;
 }
