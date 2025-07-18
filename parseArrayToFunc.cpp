@@ -7,6 +7,7 @@ int main()
     double prices[] = {49.99, 115.05, 75, 99.87, 34.5};
     int size = sizeof(prices) / sizeof(double);
     double total = getTotal(prices, size);
+
     cout << "Total is $" << total;
     return 0;
 }
