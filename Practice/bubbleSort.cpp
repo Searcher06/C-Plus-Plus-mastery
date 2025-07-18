@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int numbers[] = {1, 4, 3, 5, 2};
+    int numbers[] = {1, 4, 3, 5, 7, 8, 2, 9, 10, 6};
     int size = sizeof(numbers) / sizeof(int);
 
     for (int j = 0; j < size - 1; j++)
