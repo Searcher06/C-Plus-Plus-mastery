@@ -9,11 +9,11 @@ int main()
         {"Corvette", "Equinox", "Silverado"},
         {"Challenger", "Durango", "Ram 1500"},
     };
-    int size = sizeof(cars) / sizeof(cars[0]);
-
-    for (int i = 0; i < size; i++)
+    int rows = sizeof(cars) / sizeof(cars[0]);
+    int columns = sizeof(cars[0]) / sizeof(cars[0][0]);
+    for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < sizeof(cars[i]) / sizeof(cars[i][0]); j++)
+        for (int j = 0; j < columns; j++)
         {
             cout << cars[i][j] << " ";
         }
