@@ -40,10 +40,10 @@ int main()
 
     if (total % 10 == 0 && total != 0)
     {
-        cout << "Valid credit card!";
+        cout << "Valid credit card number!";
     }
     else
     {
-        cout << "Invalid credit card!";
+        cout << "Invalid credit card number!";
     }
 }
