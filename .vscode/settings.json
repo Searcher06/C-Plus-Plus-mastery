@@ -8,7 +8,8 @@
     "format": "cpp",
     "initializer_list": "cpp",
     "ranges": "cpp",
-    "span": "cpp"
+    "span": "cpp",
+    "string": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

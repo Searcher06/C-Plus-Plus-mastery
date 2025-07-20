@@ -1,1 +1,1 @@
-Operator != '+' || Operator != '-' || Operator != '/' || Operator != 'x'  || Operator != 'X'
+string temp;
