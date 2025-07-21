@@ -11,6 +11,8 @@ using namespace std;
 
 int main()
 {
+    // 6011000990139424
+    // 123456
     string creditCardNumber;
     string doubledNums;
     int sumOfDoubledNums = 0;
@@ -19,7 +21,8 @@ int main()
 
     cout << "Enter a credit card number : ";
     cin >> creditCardNumber;
-    for (int i = creditCardNumber.length() - 2; i <= creditCardNumber.length(); i -= 2)
+
+    for (int i = creditCardNumber.length() - 2; i >= 0; i -= 2)
     {
         int num = creditCardNumber[i] - '0';
         num = num * 2;
@@ -30,7 +33,7 @@ int main()
         sumOfDoubledNums += num;
     }
 
-    for (int i = creditCardNumber.length() - 1; i <= creditCardNumber.length(); i -= 2)
+    for (int i = creditCardNumber.length() - 1; i >= 0; i -= 2)
     {
         int num = creditCardNumber[i] - '0';
         sumofOdd += num;
