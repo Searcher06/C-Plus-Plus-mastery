@@ -152,6 +152,6 @@ bool checkTie(char *spaces)
             return false;
         }
     }
-    cout << "It's a tie!\n";
+    cout << "It's a tie\n";
     return true;
 }
