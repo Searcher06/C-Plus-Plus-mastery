@@ -15,14 +15,25 @@ int main()
     especially when accepting user input.
     */
 
-    int *pNum = NULL;
+    char *pGrades = NULL;
+    int size;
 
-    pNum = new int;
+    cout << "How many grades to enter in ?:";
+    cin >> size;
 
-    // *pNum = 21;
+    pGrades = new char[size];
 
-    cout << "Address: " << pNum << '\n';
-    cout << "Value: " << *pNum << '\n';
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter grade #" << i + 1 << ": ";
+        cin >> pGrades[i];
+    }
 
+    for (int i = 0; i < size; i++)
+    {
+        cout << pGrades[i] << " ";
+    }
+
+    delete[] pGrades;
     return 0;
 }
