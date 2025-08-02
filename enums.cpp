@@ -11,6 +11,13 @@ enum Day
     friday = 5,
     saturday = 6
 };
+enum Flavor
+{
+    vanilla,
+    chocolate,
+    strawberry,
+    mint
+};
 
 int main()
 {
@@ -18,7 +25,9 @@ int main()
     // named-integer constants.
     // GREAT if you have a set of potential options
 
-    Day today = sunday;
+    // when working with enums if you don't assign integer values
+    // to the enums it will implicitly assigned
+    Day today = monday;
 
     switch (today)
     {
